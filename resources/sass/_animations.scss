@@ -1,0 +1,81 @@
+.pulse-in-out {
+    animation: pulse 2s infinite;
+}
+
+.fadeUp-enter-active,
+.fadeUp-leave-active {
+    transition-duration: 0.5s;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    transform: none;
+}
+
+.fadeUp-enter {
+    transform: translateY(50px, 0);
+    opacity: 0;
+}
+.fadeUp-leave-to {
+    transform: translate(0, 0);
+    opacity: 0;
+}
+
+.fadeLeft-enter-active,
+.fadeLeft-leave-active {
+    transition-duration: 0.5s;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    transform: none;
+}
+
+.fadeLeft-enter {
+    transform: translate(100%, 0);
+    opacity: 0;
+}
+.fadeLeft-leave-to {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+.fadeFixed-enter-active,
+.fadeFixed-leave-active {
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    transition-timing-function: ease;
+}
+
+.fadeFixed-enter,
+.fadeFixed-leave-active {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.bounce-enter-active {
+    // transform: translateZ(0);
+    backface-visibility: hidden;
+
+    animation: bounce-in 0.6s;
+}
+
+.component-fade-enter-active,
+.component-fade-leave-active {
+    transition: opacity 0.3s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+}
