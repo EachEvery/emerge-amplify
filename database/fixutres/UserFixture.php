@@ -15,25 +15,10 @@ class UserFixture
     {
         return [
             [
-                'name' => 'Nate Hobi',
-                'email' => 'nate@natehobi.com',
-                'password' => $this->hasher->make('password'),
-            ],
-            [
-                'name' => 'Grace Leuenberger',
-                'email' => 'grace@eachevery.com',
-                'password' => $this->hasher->make('r3adwr!te'),
-            ],
-            [
-                'name' => 'Alex Catanese',
-                'email' => 'alex@eachevery.com',
-                'password' => $this->hasher->make('r3adwr!te'),
-            ],
-            [
-                'name' => 'Nate Mucha',
-                'email' => 'nate@eachevery.com',
-                'password' => $this->hasher->make('r3adwr!te'),
-            ],
+                'name' => 'Amplify',
+                'email' => 'amplify@travelingstanzas.com',
+                'password' => $this->hasher->make('ThV5PXFk'),
+            ]
         ];
     }
 }
