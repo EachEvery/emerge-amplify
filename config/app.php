@@ -1,5 +1,9 @@
 <?php
 
+
+$appUrl = env('APP_URL', 'http://localhost');
+$rootHost = explode('//', $appUrl)[1];
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -51,8 +55,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
-    'root_host' => env('ROOT_HOST', 'emerge.travelingstanzas.com'),
+    'url' => $appUrl,
+    'root_host' => $rootHost,
     'asset_url' => env('ASSET_URL', null),
 
     /*
