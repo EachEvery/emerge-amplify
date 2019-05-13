@@ -44,7 +44,7 @@ Here's a quick high-level overview of how things work / how things are managed i
 
 We spun up a seperate instance of Emerge for Web here: https://e2amp.travelingstanzas.com/.
 
-You can access "random" collections by visting the `/random` route, which will take you to a random collection.
+You can access "random" collections by visting https://e2amp.travelingstanzas.com/random, which will redirect to one of the collections in the database.
 
 You can also access the admin portion of the website by visiting https://e2amp.travelingstanzas.com/admin and logging in with these credentials.
 
