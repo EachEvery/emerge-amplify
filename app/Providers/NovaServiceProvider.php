@@ -23,9 +23,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function routes()
     {
         Nova::routes()
-                ->withAuthenticationRoutes()
-                ->withPasswordResetRoutes()
-                ->register();
+            ->withAuthenticationRoutes()
+            ->withPasswordResetRoutes()
+            ->register();
     }
 
     /**
@@ -36,12 +36,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function gate()
     {
         Gate::define('viewNova', function ($user) {
-            return in_array($user->email, [
-                'nate@natehobi.com',
-                'grace@eachevery.com',
-                'nate@eachevery.com',
-                'alex@eachevery.com',
-            ]);
+            return true; // We're returning true here since we're only using user authentication for the admin portion.
+
+            // return in_array($user->email, [
+            //     'test@example.com',            
+            // ]);
         });
     }
 
@@ -71,6 +70,5 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
      * Register any application services.
      */
     public function register()
-    {
-    }
+    { }
 }
