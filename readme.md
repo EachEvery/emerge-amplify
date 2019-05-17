@@ -33,12 +33,11 @@ Getting this application running on a server follows a similar process to what y
 
 ### A High Level Overview How Emerge Works
 
-Here's a quick high-level overview of how things work / how things are managed in the admin panel: [Watch Video](https://www.dropbox.com/s/ceeakvv8uostm9b/Screen%20Recording%202019-05-10%20at%203.08.31%20PM.mov?dl=0). There's not a lot of detail in the video but hopefully will provide some help
+Here's a quick high-level overview of how things work / how things are managed in the admin panel: [Watch Video](https://www.dropbox.com/s/6atj9lt64ejcv4h/emerge-web-demo.mov?dl=0). There's not a lot of detail in the video but hopefully will provide some help
 
 ### Points of Discussion / Things to Figure Out
 
--   How should we lock this down for folks only coming from Amplify? We could leverage a simple signed url system for this.
--   How do we want to handle collections / do we want to utilize subdomains?
+-   Some kind of basic gatekeeping for users coming from Amplify's software (signed urls, etc)
 
 ### Access the Sandbox
 
